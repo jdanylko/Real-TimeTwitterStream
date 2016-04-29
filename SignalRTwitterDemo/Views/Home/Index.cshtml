@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<p>&nbsp;</p>
+
+<button id="firehoseOn" class="btn btn-warning">Turn on the firehose</button>
+<button id="firehoseOff" class="btn btn-danger">Turn it off! Turn it off!</button>
+<label id="firehoseStatus"></label>
+
+<div class="tweets">
+   
+</div>
+
+@section scripts
+{
+    <script src="/Scripts/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.signalR-2.2.0.min.js" type="text/javascript"></script>
+    <script src="/signalr/hubs" type="text/javascript"></script>
+    <script src="/Scripts/twitterLive.js" type="text/javascript"></script>
+
+
+}
