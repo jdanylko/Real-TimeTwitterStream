@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
 using Tweetinvi;
 using Tweetinvi.Core.Interfaces.Streaminvi;
+using Tweetinvi.Streaming;
 
 namespace SignalRTwitterDemo.Hubs
 {
@@ -31,7 +32,7 @@ namespace SignalRTwitterDemo.Hubs
                     }
 
                     // let's use the embeded tweet from tweetinvi
-                    var embedTweet = Tweet.GenerateOEmbedTweet(args.Tweet);
+                    var embedTweet = Tweet.GetOEmbedTweet(args.Tweet);
                     
                     await _context.Clients.All.updateTweet(embedTweet);
                 };

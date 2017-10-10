@@ -1,6 +1,6 @@
 using System.Threading;
 using Newtonsoft.Json;
-using Tweetinvi.Core.Interfaces.Models;
+using Tweetinvi.Models;
 
 namespace SignalRTwitterDemo.Hubs
 {
